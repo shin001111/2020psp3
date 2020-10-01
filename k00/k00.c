@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-int *p; // int型を指すポインタ
+int *p; // int型を指すポイン
 int a = 100;
 printf("a=%d¥n", a);
 p = &a;

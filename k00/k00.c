@@ -1,6 +1,11 @@
 #include <stdio.h>
-
 int main(void)
 {
-    printf("Hello World\n");
+int *p; // int型を指すポイン
+int a = 100;
+printf("a=%d¥n", a);
+p = &a;
+*p = 10;
+printf("a=%d, *p=%d¥n", a, *p);
+printf("address of a = %x, value of p = %x¥n", &a, p);
 }

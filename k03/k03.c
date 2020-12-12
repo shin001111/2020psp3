@@ -46,12 +46,16 @@ char* BMSearch(char text[], char key[])
         for(pos=key_len-1;pos>=0;pos--){
             if(text[start-key_len+pos+1]==key[pos]){
                 if(pos==0){
-                    return &text[start-key_len+1];
+                    return &text[start-key_len+pos+1];
         }
             }else{
-                start=start+table[(int)text[start]];
                 break; 
             }
+        }
+       int start2=start;
+        start=start-key_len+pos+1+table[(int)text[start-key_len+pos+1]];
+        if(start<=start2){
+            start=start2+1;
         }
 
 }

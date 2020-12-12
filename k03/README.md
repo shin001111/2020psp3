@@ -66,3 +66,8 @@ BM Search. Find keyword at:wind in my hair.
 
 ## 修正履歴
 
+12/12 15:40
+-55startの値を記憶させるstart2を定義
+-56start を文字が不一致であった場所+table[不一致であった文字]となるよう変更
+-57新しいstartが更新前のstartの値より小さいか同じの場合
+-58前のstartに+1したものをstartとする
